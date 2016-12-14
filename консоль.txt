@@ -1,0 +1,29 @@
+$ cd domains/laravelproduct
+
+web@339-1-1 c:\OpenServer\domains\laravelproduct
+$ composer create-project laravel/laravel blog "5.2.*"
+web@339-1-1 c:\OpenServer\domains\laravelproduct
+$ cd blog
+
+web@339-1-1 c:\OpenServer\domains\laravelproduct\blog
+$ php artisan make:migration create_products_table --create=products
+Created Migration: 2016_12_14_163325_create_products_table
+
+web@339-1-1 c:\OpenServer\domains\laravelproduct\blog
+$ php artisan migrate
+Migration table created successfully.
+Migrated: 2014_10_12_000000_create_users_table
+Migrated: 2014_10_12_100000_create_password_resets_table
+Migrated: 2016_12_14_163325_create_products_table
+
+web@339-1-1 c:\OpenServer\domains\laravelproduct\blog
+$ php artisan make:model Product
+Model created successfully.
+
+web@339-1-1 c:\OpenServer\domains\laravelproduct\blog
+$ php artisan make:controller IndexController
+Controller created successfully.
+
+web@339-1-1 c:\OpenServer\domains\laravelproduct\blog
+$ php artisan make:controller AdminController
+Controller created successfully.

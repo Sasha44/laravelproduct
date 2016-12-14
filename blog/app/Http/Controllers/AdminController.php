@@ -33,8 +33,9 @@ class AdminController extends Controller {
         return redirect()->route('admin');
     }
 
-    public function destroy() {
-        
+    public function destroy(Product $product) {
+        $product->delete();
+        return redirect()->route('admin');
     }
 
 }
