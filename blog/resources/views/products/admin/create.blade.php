@@ -6,7 +6,7 @@
     <!-- Отображение ошибок проверки ввода -->
    
     <!-- Форма новой задачи -->
-    <form action="/admin/product" method="POST" class="form-horizontal">
+    <form action="{{route('store')}}" method="POST" class="form-horizontal">
       {{ csrf_field() }}
       <!-- Имя задачи -->
       <div class="form-group">
